@@ -8,6 +8,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import ProductDetails from "./components/Product/ProductDetails";
 import ScrollToTop from "./components/ScrollToTop";
 
+
 const App: React.FC = () => {
   return (
     <Router>

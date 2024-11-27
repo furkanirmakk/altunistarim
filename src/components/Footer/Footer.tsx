@@ -2,9 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
-  faTwitter,
+  faGoogle,
   faInstagram,
-  faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { useNavigate } from "react-router-dom";
 
@@ -104,19 +103,18 @@ const Footer: React.FC = () => {
           {/* Sosyal Medya */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Sosyal Medya</h3>
-            <div className="flex justify-center sm:justify-start space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
+            <div className="flex justify-center sm:justify-start space-x-4 p-4">
+              <a href="https://www.facebook.com/mehmet.gokce.5458" className="text-gray-400 hover:text-white">
                 <FontAwesomeIcon icon={faFacebookF} size="lg" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <FontAwesomeIcon icon={faTwitter} size="lg" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="https://instagram.com/altunistarim?igshid=MzRlODBiNWFlZA==" className="text-gray-400 hover:text-white">
                 <FontAwesomeIcon icon={faInstagram} size="lg" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
+              <a href="https://www.google.com/maps/dir//altuni%C5%9F+tar%C4%B1m+makinalar%C4%B1/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x152a6e67498564d3:0x19f731ec0eb56074?sa=X&amp;ved=2ahUKEwiC__D804T_AhVGR_EDHcfID6IQ9Rd6BAhDEAQ" className="text-gray-400 hover:text-white">
+                <FontAwesomeIcon icon={faGoogle} size="lg" />
               </a>
+              
+              
             </div>
           </div>
         </div>

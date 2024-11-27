@@ -11,6 +11,7 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           {/* Başlık */}
           <div className="text-center mb-16">
+          <h2 className="text-4xl font-semibold mb-4">Hakkımızda</h2>
             <p className="text-lg text-gray-600">
               Biz, kaliteli hizmet ve müşteri memnuniyetini ön planda tutarak
               sektördeki en iyilerden biri olmayı hedefliyoruz.
@@ -39,7 +40,7 @@ const About: React.FC = () => {
                 ISO/IEC 27001:2013, ISO 45001:2018 Kalite Yönetim Sistemine
                 sahip olup, ürün ve hizmetlerini güvence altına almıştır.
               </p>
-              
+
               <p className="text-lg text-gray-600 ml-10">
                 Sektördeki en iyi hizmeti sunan ve sürdürülebilir büyüme
                 sağlayan bir şirket olmayı hedefliyoruz. Yenilikçi yaklaşımımız
@@ -66,12 +67,20 @@ const About: React.FC = () => {
               Herhangi bir sorunuz varsa, bizimle iletişime geçmekten
               çekinmeyin.
             </p>
-            <a
-              href="mailto:altunistarim@gmail.com"
-              className="bg-gray-800 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-all"
-            >
-              E-posta Gönder
-            </a>
+            <div className="flex justify-center space-x-4">
+              <a
+                href="mailto:altunistarim@gmail.com"
+                className="bg-gray-800 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-all"
+              >
+                E-posta Gönder
+              </a>
+              <a
+                href="tel:+905322649196"
+                className="bg-gray-800 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-all"
+              >
+                Ara
+              </a>
+            </div>
           </div>
         </div>
       </div>

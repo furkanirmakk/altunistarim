@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
               </ul>
             </div>
           </div>
-
+    
           {/* Google Maps Haritası */}
           <div className="w-full h-[500px]">
             <iframe
@@ -66,12 +66,20 @@ const Contact: React.FC = () => {
               Herhangi bir sorunuz varsa, bizimle iletişime geçmekten
               çekinmeyin.
             </p>
-            <a
-              href="mailto:altunistarim@gmail.com"
-              className="bg-gray-800 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-all"
-            >
-              E-posta Gönder
-            </a>
+            <div className="flex justify-center space-x-4">
+              <a
+                href="mailto:altunistarim@gmail.com"
+                className="bg-gray-800 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-all"
+              >
+                E-posta Gönder
+              </a>
+              <a
+                href="tel:+905322649196"
+                className="bg-gray-800 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-all"
+              >
+                Ara
+              </a>
+            </div>
           </div>
         </div>
       </div>
