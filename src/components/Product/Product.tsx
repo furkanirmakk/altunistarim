@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface Product {
   id: number;
@@ -19,14 +20,16 @@ const Product: React.FC<ProductProps> = ({ products }) => {
             key={product.id}
             className="bg-gray-100 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:translate-y-4 hover:border-4 hover:border-gray-800"
           >
-            <img
-              src={product.imageUrl}
-              alt={product.name}
-              className="w-full h-48 object-cover"
-            />
-            <div className="bg-gray-800 text-white text-center py-2">
-              <p className="text-lg font-semibold">{product.name}</p>
-            </div>
+            <Link to={`/product/${product.id}`}>
+              <img
+                src={product.imageUrl}
+                alt={product.name}
+                className="w-full h-48 object-cover"
+              />
+              <div className="bg-gray-800 text-white text-center py-2">
+                <p className="text-lg font-semibold">{product.name}</p>
+              </div>
+            </Link>
           </div>
         ))}
       </div>

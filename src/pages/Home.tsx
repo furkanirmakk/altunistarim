@@ -2,31 +2,30 @@ import React from "react";
 import HomeNavbar from "../components/Navbar/HomeNavbar";
 import Product from "../components/Product/Product"; // Doğru yol
 
-
 const Home: React.FC = () => {
   const products1 = [
     { id: 1, name: "Smart", imageUrl: "/assets/balya/5.png" },
-    { id: 3, name: "Baler B", imageUrl: "/assets/balya/1.png" },
-    { id: 4, name: "Baler T", imageUrl: "/assets/balya/3.png" },
-    { id: 6, name: "Baler A", imageUrl: "/assets/yedek/yedekparca.jpg" },
-    { id: 1, name: "Baler C", imageUrl: "/assets/balya/5.png" },
+    { id: 2, name: "Baler B", imageUrl: "/assets/balya/1.png" },
+    { id: 3, name: "Baler T", imageUrl: "/assets/balya/3.png" },
+    { id: 4, name: "balya4", imageUrl: "/assets/yedek/yedekparca.jpg" },
+    { id: 5, name: "balya5", imageUrl: "/assets/balya/5.png" },
   ];
   const products2 = [
-    { id: 1, name: "Balya Makineleri", imageUrl: "/assets/patates/4.png" },
-    { id: 3, name: "Patates Makineleri", imageUrl: "/assets/patates/4.png" },
-    { id: 3, name: "Patates Makineleri", imageUrl: "/assets/patates/4.png" },
-    { id: 3, name: "Patates Makineleri", imageUrl: "/assets/patates/4.png" },
+    { id: 6, name: "Patates Hasat Makinesi", imageUrl: "/assets/patates/4.png" },
+    { id: 7, name: "Patates2", imageUrl: "/assets/patates/4.png" },
+    { id: 8, name: "Patates 3", imageUrl: "/assets/patates/4.png" },
+    { id: 9, name: "Patates4", imageUrl: "/assets/patates/4.png" },
   ];
   const products3 = [
-    { id: 1, name: "Hasat Tablası", imageUrl: "/assets/toprak/6.png" },
-    { id: 3, name: "Patates Makineleri", imageUrl: "/assets/toprak/6.png" },
-    { id: 3, name: "Patates Makineleri", imageUrl: "/assets/toprak/6.png" },
+    { id: 10, name: "AYÇİÇEK HASAT TABLASI", imageUrl: "/assets/toprak/6.png" },
+    { id: 11, name: "toprak2", imageUrl: "/assets/toprak/6.png" },
+    { id: 12, name: "toprak3", imageUrl: "/assets/toprak/6.png" },
   ];
   const products4 = [
-    { id: 1, name: "Elek", imageUrl: "/assets/yedek/ELEK.png" },
-    { id: 3, name: "Kuyruk ", imageUrl: "/assets/yedek/Kuyruk Resim.png" },
-    { id: 3, name: "Rotor", imageUrl: "/assets/yedek/ROTOR1.png" },
-    { id: 3, name: "Yedek Parça", imageUrl: "/assets/yedek/yedekparca.jpg" },
+    { id: 13, name: "Elek", imageUrl: "/assets/yedek/ELEK.png" },
+    { id: 14, name: "Kuyruk ", imageUrl: "/assets/yedek/Kuyruk Resim.png" },
+    { id: 15, name: "Rotor", imageUrl: "/assets/yedek/ROTOR1.png" },
+    { id: 16, name: "Yedek Parça", imageUrl: "/assets/yedek/yedekparca.jpg" },
   ];
 
   return (
