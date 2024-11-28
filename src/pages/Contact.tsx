@@ -7,17 +7,18 @@ const Contact: React.FC = () => {
       <HomeNavbar />
 
       <div className="bg-white text-gray-900 min-h-screen py-16">
-        <div className="container mx-auto px-4 flex flex-col justify-center items-center">
-          {/* Başlık ve İletişim Bilgileri */}
-          <div className="text-center mb-12 max-w-2xl">
-            <h2 className="text-4xl font-semibold mb-4">İletişim</h2>
-            <p className="text-lg text-gray-600">
-              Bize aşağıdaki bilgiler üzerinden ulaşabilirsiniz.
-            </p>
-          </div>
+        <div className="container mx-auto px-4 pt-2 flex flex-col md:flex-row justify-center items-center">
+          
 
-          {/* İletişim Bilgileri */}
-          <div className="flex flex-col justify-center items-center mb-12">
+          {/* Sol Kısım: İletişim Bilgileri */}
+          <div className="w-full h-[500px] md:w-1/3 px-4 bg-gray-100 ">
+            <div className="text-center mb-12 max-w-2xl">
+              <h2 className="text-4xl font-semibold mb-4">İletişim</h2>
+              <p className="text-lg text-gray-600">
+                Bize aşağıdaki bilgiler üzerinden ulaşabilirsiniz.
+              </p>
+            </div>
+
             <div className="text-center mb-8">
               <h3 className="text-2xl font-semibold mb-4">
                 İletişim Bilgileri
@@ -45,20 +46,25 @@ const Contact: React.FC = () => {
               </ul>
             </div>
           </div>
-    
-          {/* Google Maps Haritası */}
-          <div className="w-full h-[500px]">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1560.148005158312!2d34.509217163599516!3d38.54999327191223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152a0a75430b14c1%3A0xe439e41edb656fab!2zQWPEsWfDtmwgT3NiIE3DvGTDvHJsw7zEn8O8!5e0!3m2!1str!2str!4v1732579390172!5m2!1str!2str"
-              width="100%"
-              height="100%"
-              allowFullScreen={true}
-              loading="lazy"
-              title="Google Maps"
-              className="rounded-lg shadow-lg"
-            ></iframe>
+
+          {/* Sağ Kısım: Harita */}
+          <div className="w-full md:w-2/3 mb-8 md:mb-0 flex justify-center items-center">
+            <div className="w-10/12 h-[500px] ">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1560.148005158312!2d34.509217163599516!3d38.54999327191223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152a0a75430b14c1%3A0xe439e41edb656fab!2zQWPEsWfDtmwgT3NiIE3DvGTDvHJsw7zEn8O8!5e0!3m2!1str!2str!4v1732579390172!5m2!1str!2str"
+                width="100%"
+                height="100%"
+                allowFullScreen={true}
+                loading="lazy"
+                title="Google Maps"
+                className="rounded-lg shadow-lg"
+              ></iframe>
+            </div>
           </div>
-          <div className="mt-16 text-center">
+
+          
+        </div>
+        <div className="mt-16 text-center">
             <h3 className="text-3xl font-semibold text-gray-800 mb-4">
               Bize Ulaşın
             </h3>
@@ -81,7 +87,6 @@ const Contact: React.FC = () => {
               </a>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

@@ -36,7 +36,8 @@ const products: Product[] = [
   {
     id: 2,
     name: "Baler B",
-    description: "“Biçerdöver Arkası Balya Makinesi” BALER-B modeli, üç ipli prizmatik bir balya makinesi olarak tasarlanmıştır. Bu makine, buğday, arpa ve benzeri tahıl saplarını bir parçalayıcı üniteden geçirerek işler ve ardından bir ip bağlama ünitesiyle bağlayıp balya haline getirir. Makine, biçerdöverin arkasının alt kısmına monte edilerek biçerdöverle birlikte çalışır ve biçerdövere şase yardımıyla bağlanır. Saplar, sırasıyla helezonik toplama düzeni, bantlı toplama düzeni ve balya yapma ünitesine bant yardımıyla gönderilir. Balya odasının genişliği ve yüksekliği sabit olup, balyanın uzunluğu 400 ile 1800 mm arasında ayarlanabilir",
+    description:
+      "“Biçerdöver Arkası Balya Makinesi” BALER-B modeli, üç ipli prizmatik bir balya makinesi olarak tasarlanmıştır. Bu makine, buğday, arpa ve benzeri tahıl saplarını bir parçalayıcı üniteden geçirerek işler ve ardından bir ip bağlama ünitesiyle bağlayıp balya haline getirir. Makine, biçerdöverin arkasının alt kısmına monte edilerek biçerdöverle birlikte çalışır ve biçerdövere şase yardımıyla bağlanır. Saplar, sırasıyla helezonik toplama düzeni, bantlı toplama düzeni ve balya yapma ünitesine bant yardımıyla gönderilir. Balya odasının genişliği ve yüksekliği sabit olup, balyanın uzunluğu 400 ile 1800 mm arasında ayarlanabilir",
     images: ["/assets/balya/1.png", "/assets/balya/2.png"],
     dimensions: [
       "Toplam uzunluk (mm) : 6200",
@@ -45,13 +46,14 @@ const products: Product[] = [
       "Devir sayısı (min-1): 450-550",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
     id: 3,
     name: "Baler T",
-    description: "“Traktör Arkası Balya Makinesi” BALER-T modeli, üç ipli prizmatik bir balya makinesi olarak tasarlanmıştır. Bu makine, buğday, arpa ve benzeri tahıl saplarını bir parçalayıcı üniteden geçirerek işler ve ardından bir ip bağlama ünitesi ile bağlayıp balya haline getirir. Çeki demiri aracılığıyla traktöre bağlanan bu balya makinesi, traktörün kuyruk milinden aldığı güçle çalışır. 191 cm genişliğinde iç içe tırmıklara sahip olan bu makine, ortadan pistonlu bir yapıdadır. Traktörün tekerlek izi üzerinde çekilen makine, dar alanlarda yüksek manevra kabiliyetine sahiptir.",
+    description:
+      "“Traktör Arkası Balya Makinesi” BALER-T modeli, üç ipli prizmatik bir balya makinesi olarak tasarlanmıştır. Bu makine, buğday, arpa ve benzeri tahıl saplarını bir parçalayıcı üniteden geçirerek işler ve ardından bir ip bağlama ünitesi ile bağlayıp balya haline getirir. Çeki demiri aracılığıyla traktöre bağlanan bu balya makinesi, traktörün kuyruk milinden aldığı güçle çalışır. 191 cm genişliğinde iç içe tırmıklara sahip olan bu makine, ortadan pistonlu bir yapıdadır. Traktörün tekerlek izi üzerinde çekilen makine, dar alanlarda yüksek manevra kabiliyetine sahiptir.",
     images: ["/assets/balya/1.png", "/assets/balya/2.png"],
     dimensions: [
       "Toplam uzunluk (mm) : 5000",
@@ -60,7 +62,7 @@ const products: Product[] = [
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
@@ -76,21 +78,22 @@ const products: Product[] = [
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
     id: 5,
     name: "Baler C",
     description: "Baler C, yüksek kapasiteli işler için tasarlanmıştır.",
-    images: ["/assets/balya/5.png", "/assets/balya/6.png"],dimensions: [
+    images: ["/assets/balya/5.png", "/assets/balya/6.png"],
+    dimensions: [
       "Toplam uzunluk (mm) : 5000",
       "Toplam genişlik (mm) : 2200",
       "Ağırlık (kg) : 2100",
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
@@ -105,7 +108,7 @@ const products: Product[] = [
       "Traktör Gücü (hp): 110",
       "Çalışma sistemi: Şaft",
       "Bıçak derecesi:25",
-      "İş derinliği: Ayarlanabilir"
+      "İş derinliği: Ayarlanabilir",
     ],
   },
   {
@@ -120,7 +123,7 @@ const products: Product[] = [
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
@@ -135,7 +138,7 @@ const products: Product[] = [
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
@@ -151,20 +154,21 @@ const products: Product[] = [
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
     id: 10,
     name: "AYÇİÇEK HASAT TABLASI",
-    description: "Üstün performansını bütün ayçiçeği çeşitlerinde göstermekte ve Ayçiçeği sapları ile başlıklarının boyutuna bakılmaksızın bütün ürünlerde sorunsuz bir şekilde kullanılmaktadır. Ayçiçeği Hasat Tablası performansı yüksek tutularak, ürünleri kolay ve kayıpsız bir şekilde tarladan kaldırması amaçlamaktadır. Fabrikamızda,6,7 ve 8 sıralı Ayçiçek Hasat Tablası üretimi bulunmaktadır.",
+    description:
+      "Üstün performansını bütün ayçiçeği çeşitlerinde göstermekte ve Ayçiçeği sapları ile başlıklarının boyutuna bakılmaksızın bütün ürünlerde sorunsuz bir şekilde kullanılmaktadır. Ayçiçeği Hasat Tablası performansı yüksek tutularak, ürünleri kolay ve kayıpsız bir şekilde tarladan kaldırması amaçlamaktadır. Fabrikamızda,6,7 ve 8 sıralı Ayçiçek Hasat Tablası üretimi bulunmaktadır.",
     images: ["/assets/toprak/6.png", "/assets/balya/6.png"],
     dimensions: [
       "Düşük ürün kaybı, yüksek verim",
       "Kolay kullanım",
       "Tüm biçerlere uyumludur",
       "Hiçbir aparata ihtiyaç duymadan hızlı kurulum",
-      "Yatık ve düşük verimli bitkilerde dahi kolay ve zengin hasat imkanı"
+      "Yatık ve düşük verimli bitkilerde dahi kolay ve zengin hasat imkanı",
     ],
   },
   {
@@ -179,7 +183,7 @@ const products: Product[] = [
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
@@ -194,7 +198,7 @@ const products: Product[] = [
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
@@ -210,7 +214,7 @@ const products: Product[] = [
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
@@ -225,7 +229,7 @@ const products: Product[] = [
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
@@ -240,7 +244,7 @@ const products: Product[] = [
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   {
@@ -260,7 +264,7 @@ const products: Product[] = [
       "Traktör Gücü (hp): 50",
       "Tipi: 3 İpli",
       "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası"
+      "Balya Boyu: 400-1800 arası",
     ],
   },
   // Diğer ürünler...
@@ -300,9 +304,13 @@ const ProductDetails: React.FC = () => {
     <div>
       <HomeNavbar />
       <div className="p-4 sm:p-8 lg:p-16">
-        <h1 className="text-4xl p-16 text-center font-bold text-gray-800 ">
-          {product.name}
-        </h1>
+        <div className="flex items-center justify-center">
+          <div className="w-32 h-1 bg-gray-800 ml-4 rounded"></div>
+          <h1 className="text-4xl p-16 text-center font-bold text-gray-800 ">
+            {product.name}
+          </h1>
+          <div className="w-32 h-1 bg-gray-800 mr-4 rounded"></div>
+        </div>
 
         {/* Slayt gösterisi kısmı */}
         <div className="relative w-[100%] sm:w-[85%] md:w-[70%] xl:w-[60%] mx-auto">
@@ -331,7 +339,7 @@ const ProductDetails: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2  gap-10 p-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2  gap-10 p-6 mt-8 bg-gray-100 ">
           {/* Ürün açıklaması */}
           <div>
             <h2 className="text-2xl font-semibold text-gray-800 text-center">

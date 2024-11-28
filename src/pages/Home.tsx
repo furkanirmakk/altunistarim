@@ -11,7 +11,11 @@ const Home: React.FC = () => {
     { id: 5, name: "balya5", imageUrl: "/assets/balya/5.png" },
   ];
   const products2 = [
-    { id: 6, name: "Patates Hasat Makinesi", imageUrl: "/assets/patates/4.png" },
+    {
+      id: 6,
+      name: "Patates Hasat Makinesi",
+      imageUrl: "/assets/patates/4.png",
+    },
     { id: 7, name: "Patates2", imageUrl: "/assets/patates/4.png" },
     { id: 8, name: "Patates 3", imageUrl: "/assets/patates/4.png" },
     { id: 9, name: "Patates4", imageUrl: "/assets/patates/4.png" },
@@ -43,29 +47,47 @@ const Home: React.FC = () => {
           </h1>
         </div>
       </div>
-      <div id="balya-makineleri" className="text-center my-8 pt-20">
+
+      <div
+        id="balya-makineleri"
+        className="text-center my-8 pt-20 flex items-center justify-center"
+      >
+        <div className="w-20 h-1 bg-gray-800 mr-4 rounded"></div>
         <h1 className="text-3xl font-bold text-gray-800">Balya Makineleri</h1>
-        <div className="w-64 h-1 bg-gray-800 mx-auto mt-2 rounded"></div>
+        <div className="w-20 h-1 bg-gray-800 ml-4 rounded"></div>
       </div>
+
       <Product products={products1} />
 
-      <div id="patates-makineleri" className="text-center my-8 pt-20">
+      <div
+        id="patates-makineleri"
+        className="text-center my-8 pt-20 flex items-center justify-center"
+      >
+        <div className="w-20 h-1 bg-gray-800 mr-4 rounded"></div>
         <h1 className="text-3xl font-bold text-gray-800">Patates Makineleri</h1>
-        <div className="w-64 h-1 bg-gray-800 mx-auto mt-2 rounded"></div>
+        <div className="w-20 h-1 bg-gray-800 ml-4 rounded"></div>
       </div>
       <Product products={products2} />
 
-      <div id="toprak-makineleri" className="text-center my-8 pt-20">
+      <div
+        id="toprak-makineleri"
+        className="text-center my-8 pt-20 flex items-center justify-center"
+      >
+        <div className="w-20 h-1 bg-gray-800 mr-4 rounded"></div>
         <h1 className="text-3xl font-bold text-gray-800">
           Toprak Hazırlama Makineleri
         </h1>
-        <div className="w-64 h-1 bg-gray-800 mx-auto mt-2 rounded"></div>
+        <div className="w-20 h-1 bg-gray-800 ml-4 rounded"></div>
       </div>
       <Product products={products3} />
 
-      <div id="yedek-parca" className="text-center my-8 pt-20 ">
+      <div
+        id="yedek-parca"
+        className="text-center my-8 pt-20 flex items-center justify-center"
+      >
+        <div className="w-20 h-1 bg-gray-800 mr-4 rounded"></div>
         <h1 className="text-3xl font-bold text-gray-800">Yedek Parça</h1>
-        <div className="w-64 h-1 bg-gray-800 mx-auto mt-2 rounded"></div>
+        <div className="w-20 h-1 bg-gray-800 ml-4 rounded"></div>
       </div>
       <Product products={products4} />
     </div>

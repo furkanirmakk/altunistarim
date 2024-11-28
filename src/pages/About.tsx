@@ -7,21 +7,21 @@ const About: React.FC = () => {
       {/* Navbar */}
       <HomeNavbar />
 
-      <div className="bg-gray-50 py-20">
+      <div className=" py-20">
         <div className="container mx-auto px-4">
           {/* Başlık */}
           <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold mb-4">Hakkımızda</h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 ">
               Biz, kaliteli hizmet ve müşteri memnuniyetini ön planda tutarak
               sektördeki en iyilerden biri olmayı hedefliyoruz.
             </p>
           </div>
 
           {/* İçerik */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 ">
             {/* Sol Taraf - Metin */}
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center bg-gray-100 p-4">
               <h3 className="text-center text-2xl font-semibold text-gray-800 mb-4">
                 Biz Kimiz ?
               </h3>
@@ -49,17 +49,17 @@ const About: React.FC = () => {
             </div>
 
             {/* Sağ Taraf - Görsel */}
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center ">
               <img
                 src="/assets/balya/5.png"
                 alt="Hakkımızda Görseli"
-                className="rounded-lg shadow-lg w-full max-w-md"
+                className="rounded-lg shadow-lg w-full bg-gray-100 "
               />
             </div>
           </div>
 
           {/* İletişim Bilgileri */}
-          <div className="mt-16 text-center">
+          <div className="mt-16 text-center  ">
             <h3 className="text-3xl font-semibold text-gray-800 mb-4">
               Bize Ulaşın
             </h3>
