@@ -18,18 +18,27 @@ const Product: React.FC<ProductProps> = ({ products }) => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="bg-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:translate-y-4 hover:border-4 hover:border-gray-800"
+            className="relative bg-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform group"
           >
-            <Link to={`/product/${product.id}`}>
-              <img
-                src={product.imageUrl}
-                alt={product.name}
-                className="w-full h-48 object-cover"
-              />
-              <div className="bg-gray-100 text-gray-800 text-center py-2">
-                <p className="text-lg font-semibold">{product.name}</p>
+            <Link
+              to={`/product/${product.id}`}
+              className="relative z-10" // Link için z-index ekledik
+            >
+              <div className="relative">
+                <img
+                  src={product.imageUrl}
+                  alt={product.name}
+                  className="w-full h-48 object-cover transition-all duration-500 transform group-hover:rotate-y-180 group-hover:scale-110 group-hover:blur-sm"
+                />
+                <div
+                  className="absolute bottom-0 w-full bg-gray-400 text-gray-800 text-center py-2 transition-all duration-300 transform opacity-100 group-hover:translate-y-[-100%] group-hover:opacity-100"
+                >
+                  <p className="text-lg font-semibold">{product.name}</p>
+                </div>
               </div>
             </Link>
+            {/* Çerçeve ekleme */}
+            <div className="absolute inset-0 border-2 border-transparent group-hover:border-gray-800 rounded-lg"></div>
           </div>
         ))}
       </div>

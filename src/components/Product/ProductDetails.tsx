@@ -275,6 +275,7 @@ const ProductDetails: React.FC = () => {
   const product = products.find((p) => p.id === Number(id));
 
   const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
+  const [animationClass, setAnimationClass] = useState<string>("");
 
   if (!product) {
     return (
@@ -285,6 +286,7 @@ const ProductDetails: React.FC = () => {
   }
 
   const goToPrevious = () => {
+    setAnimationClass("image-prev"); // Soldan sağa kayma animasyonu
     setSelectedImageIndex(
       selectedImageIndex === 0
         ? product.images.length - 1
@@ -293,6 +295,7 @@ const ProductDetails: React.FC = () => {
   };
 
   const goToNext = () => {
+    setAnimationClass("image-next"); // Sağdan sola kayma animasyonu
     setSelectedImageIndex(
       selectedImageIndex === product.images.length - 1
         ? 0
@@ -318,7 +321,8 @@ const ProductDetails: React.FC = () => {
             <img
               src={product.images[selectedImageIndex]}
               alt={product.name}
-              className="w-full h-auto object-cover rounded shadow"
+              className={`w-full h-auto object-cover rounded shadow image-transition ${animationClass}`}
+              onAnimationEnd={() => setAnimationClass("")} // Animasyon tamamlandığında sınıfı temizle
             />
 
             {/* Previous button */}
@@ -339,7 +343,7 @@ const ProductDetails: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2  gap-10 p-6 mt-8 bg-gray-100 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-6 mt-8 bg-gray-100 ">
           {/* Ürün açıklaması */}
           <div>
             <h2 className="text-2xl font-semibold text-gray-800 text-center">

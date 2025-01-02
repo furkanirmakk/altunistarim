@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 interface DesktopMenuProps {
   activeLink: string;
@@ -159,6 +160,7 @@ const DesktopMenu: React.FC<DesktopMenuProps> = ({
           İletişim
         </a>
       </li>
+      <LanguageSwitcher />
     </ul>
   );
 };

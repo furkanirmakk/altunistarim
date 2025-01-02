@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import HomeNavbar from "../components/Navbar/HomeNavbar";
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div>
       {/* Navbar */}
@@ -11,11 +13,10 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           {/* Başlık */}
           <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold mb-4">Hakkımızda</h2>
-            <p className="text-lg text-gray-600 ">
-              Biz, kaliteli hizmet ve müşteri memnuniyetini ön planda tutarak
-              sektördeki en iyilerden biri olmayı hedefliyoruz.
-            </p>
+            <h2 className="text-4xl font-semibold mb-4">
+              {t("aboutpage.title")}
+            </h2>
+            <p className="text-lg text-gray-600 ">{t("aboutpage.intro")}</p>
           </div>
 
           {/* İçerik */}
@@ -23,22 +24,10 @@ const About: React.FC = () => {
             {/* Sol Taraf - Metin */}
             <div className="flex flex-col justify-center bg-gray-100 p-4">
               <h3 className="text-center text-2xl font-semibold text-gray-800 mb-4">
-                Biz Kimiz ?
+                {t("aboutpage.whoWeAreTitle")}
               </h3>
               <p className="text-lg text-gray-600 mb-6 ml-10">
-                1983 yılında Nevşehir’de kurularak tornacılık sektöründe
-                faaliyetine başlamıştır. Kısa zamanda çok hızlı bir gelişme
-                kaydederek tarım makineleri alanına yönelip patates ekim ve
-                söküm makinalarının üretimine başlamıştır. Sonradan ürün
-                yelpazesini genişleterek Patoz Makinesi, Balya Makinesi, Römork,
-                Ayçiçek ve Mısır tablası gibi ağırlıklı olarak harman-hasat
-                grubunda kullanılmakta olan tarım makinelerinin üretimine
-                başlamıştır. Bugün, profesyonel takımımız tarımsal ekipmanlar
-                alanında 40 yıllık birikimi, sürekli gelişen ve ilerleyen
-                performans ve üretimi ile 2000 m2 kapalı, 8000 m2 açık alanda
-                hizmet sunmaktadır. Firmamız ISO 9001:2015, ISO 14001:2015,
-                ISO/IEC 27001:2013, ISO 45001:2018 Kalite Yönetim Sistemine
-                sahip olup, ürün ve hizmetlerini güvence altına almıştır.
+                {t("aboutpage.whoWeAreText")}
               </p>
 
               <p className="text-lg text-gray-600 ml-10">
@@ -48,12 +37,14 @@ const About: React.FC = () => {
               </p>
             </div>
 
-            {/* Sağ Taraf - Görsel */}
-            <div className="flex justify-center items-center ">
-              <img
-                src="/assets/balya/5.png"
-                alt="Hakkımızda Görseli"
-                className="rounded-lg shadow-lg w-full bg-gray-100 "
+            {/* Sağ Taraf - Video */}
+            <div className="flex justify-center items-center">
+              <video
+                src="../../assets/bicer-dover-video2.mp4" // Video dosyasının yolu
+                className="rounded-lg shadow-lg w-full bg-gray-100"
+                autoPlay
+                loop
+                muted
               />
             </div>
           </div>

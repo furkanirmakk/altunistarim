@@ -1,6 +1,8 @@
 import React from "react";
 import HomeNavbar from "../components/Navbar/HomeNavbar";
 import Product from "../components/Product/Product"; // Doğru yol
+import TypingEffect from "../components/TypingEffect";
+import BackgroundVideo from "../components/BackgroundVideo";
 
 const Home: React.FC = () => {
   const products1 = [
@@ -34,17 +36,15 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <div
-        className="bg-fixed bg-cover bg-center min-h-screen"
-        style={{
-          backgroundImage: "url('/assets/bugday.jpg')", // Arka plan görseli
-        }}
-      >
+      <div>
         <HomeNavbar />
-        <div className="flex flex-col items-center justify-center text-center text-black h-[calc(100vh-4rem)]">
-          <h1 className="text-5xl font-bold">
-            1983'Den Bu Yana Hizmetinizdeyiz
-          </h1>
+        {/* Background Slideshow */}
+        <div
+          className="relative"
+          style={{ boxShadow: "0 10px 30px rgba(0, 0, 0, 0.3)" }}
+        >
+          <BackgroundVideo />
+          <TypingEffect />
         </div>
       </div>
 
