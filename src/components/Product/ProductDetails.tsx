@@ -7,7 +7,7 @@ interface Product {
   name: string;
   description: string;
   images: string[];
-  dimensions: string[];
+  dimensions: { name: string; value: string }[];
 }
 
 const products: Product[] = [
@@ -23,14 +23,14 @@ const products: Product[] = [
       "/assets/yedek/ROTOR1.png",
     ],
     dimensions: [
-      "Toplam uzunluk (mm) : 4000",
-      "Toplam genişlik (mm) : 2000",
-      "Ağırlık (kg) : 1000",
-      "Devir sayısı (min-1): 450-550",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
-      "Çalışma sistemi: Kayış kasnak",
+      { name: "Toplam uzunluk", value: "4000 mm" },
+      { name: "Toplam genişlik", value: "2000 mm" },
+      { name: "Ağırlık", value: "1000 kg" },
+      { name: "Devir sayısı", value: "450-550 min-1" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
+      { name: "Çalışma sistemi", value: "Kayış kasnak" },
     ],
   },
   {
@@ -40,13 +40,13 @@ const products: Product[] = [
       "“Biçerdöver Arkası Balya Makinesi” BALER-B modeli, üç ipli prizmatik bir balya makinesi olarak tasarlanmıştır. Bu makine, buğday, arpa ve benzeri tahıl saplarını bir parçalayıcı üniteden geçirerek işler ve ardından bir ip bağlama ünitesiyle bağlayıp balya haline getirir. Makine, biçerdöverin arkasının alt kısmına monte edilerek biçerdöverle birlikte çalışır ve biçerdövere şase yardımıyla bağlanır. Saplar, sırasıyla helezonik toplama düzeni, bantlı toplama düzeni ve balya yapma ünitesine bant yardımıyla gönderilir. Balya odasının genişliği ve yüksekliği sabit olup, balyanın uzunluğu 400 ile 1800 mm arasında ayarlanabilir",
     images: ["/assets/balya/1.png", "/assets/balya/2.png"],
     dimensions: [
-      "Toplam uzunluk (mm) : 6200",
-      "Toplam genişlik (mm) : 2600",
-      "Ağırlık (kg) : 2700",
-      "Devir sayısı (min-1): 450-550",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "6200 mm" },
+      { name: "Toplam genişlik", value: "2600 mm" },
+      { name: "Ağırlık", value: "2700 kg" },
+      { name: "Devir sayısı", value: "450-550 min-1" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -56,13 +56,13 @@ const products: Product[] = [
       "“Traktör Arkası Balya Makinesi” BALER-T modeli, üç ipli prizmatik bir balya makinesi olarak tasarlanmıştır. Bu makine, buğday, arpa ve benzeri tahıl saplarını bir parçalayıcı üniteden geçirerek işler ve ardından bir ip bağlama ünitesi ile bağlayıp balya haline getirir. Çeki demiri aracılığıyla traktöre bağlanan bu balya makinesi, traktörün kuyruk milinden aldığı güçle çalışır. 191 cm genişliğinde iç içe tırmıklara sahip olan bu makine, ortadan pistonlu bir yapıdadır. Traktörün tekerlek izi üzerinde çekilen makine, dar alanlarda yüksek manevra kabiliyetine sahiptir.",
     images: ["/assets/balya/1.png", "/assets/balya/2.png"],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000 mm" },
+      { name: "Toplam genişlik", value: "2200 mm" },
+      { name: "Ağırlık", value: "2100 kg" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -72,13 +72,13 @@ const products: Product[] = [
       "Baler A, kompakt tasarımıyla küçük ölçekli çiftlikler için uygundur.",
     images: ["/assets/yedek/yedekparca.jpg", "/assets/yedek/another-image.jpg"],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000 mm" },
+      { name: "Toplam genişlik", value: "2200 mm" },
+      { name: "Ağırlık", value: "2100 kg" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -87,13 +87,13 @@ const products: Product[] = [
     description: "Baler C, yüksek kapasiteli işler için tasarlanmıştır.",
     images: ["/assets/balya/5.png", "/assets/balya/6.png"],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000 mm" },
+      { name: "Toplam genişlik", value: "2200 mm" },
+      { name: "Ağırlık", value: "2100 kg" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -103,12 +103,12 @@ const products: Product[] = [
       "Traktörün üç nokta askı düzenine asılan makine, kuyruk milinden tahrik edilmektedir. Zincir palet üzerine 4 ayrı palet şeklinde tasarlanmıştır. Kazıcı bıçakların toprağa dalarak üzerine aldığı yumru ve toprak kütlesi eleme düzenine aktarılıp, yumrular topraktan temizlenir ve makinenin arkasındaki elenmiş toprak üzerine bırakılır.",
     images: ["/assets/patates/4.png", "/assets/balya/4.png"],
     dimensions: [
-      "Toplam uzunluk (mm): 4000",
-      "Toplam genişlik (mm): 3200",
-      "Traktör Gücü (hp): 110",
-      "Çalışma sistemi: Şaft",
-      "Bıçak derecesi:25",
-      "İş derinliği: Ayarlanabilir",
+      { name: "Toplam uzunluk", value: "4000 mm" },
+      { name: "Toplam genişlik", value: "3200 mm" },
+      { name: "Traktör Gücü", value: "110 hp" },
+      { name: "Çalışma sistemi", value: "Şaft" },
+      { name: "Bıçak derecesi", value: "25" },
+      { name: "İş derinliği", value: "Ayarlanabilir" },
     ],
   },
   {
@@ -117,13 +117,13 @@ const products: Product[] = [
     description: "Baler B, modern tarım için ideal bir çözümdür.",
     images: ["/assets/balya/1.png", "/assets/balya/2.png"],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000" },
+      { name: "Toplam genişlik", value: "2200" },
+      { name: "Ağırlık", value: "2100" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -132,13 +132,13 @@ const products: Product[] = [
     description: "Baler T, üstün performans ve kolay kullanım sağlar.",
     images: ["/assets/balya/3.png", "/assets/balya/4.png"],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000" },
+      { name: "Toplam genişlik", value: "2200" },
+      { name: "Ağırlık", value: "2100" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -148,13 +148,13 @@ const products: Product[] = [
       "Baler A, kompakt tasarımıyla küçük ölçekli çiftlikler için uygundur.",
     images: ["/assets/yedek/yedekparca.jpg", "/assets/yedek/another-image.jpg"],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000" },
+      { name: "Toplam genişlik", value: "2200" },
+      { name: "Ağırlık", value: "2100" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -164,11 +164,14 @@ const products: Product[] = [
       "Üstün performansını bütün ayçiçeği çeşitlerinde göstermekte ve Ayçiçeği sapları ile başlıklarının boyutuna bakılmaksızın bütün ürünlerde sorunsuz bir şekilde kullanılmaktadır. Ayçiçeği Hasat Tablası performansı yüksek tutularak, ürünleri kolay ve kayıpsız bir şekilde tarladan kaldırması amaçlamaktadır. Fabrikamızda,6,7 ve 8 sıralı Ayçiçek Hasat Tablası üretimi bulunmaktadır.",
     images: ["/assets/toprak/6.png", "/assets/balya/6.png"],
     dimensions: [
-      "Düşük ürün kaybı, yüksek verim",
-      "Kolay kullanım",
-      "Tüm biçerlere uyumludur",
-      "Hiçbir aparata ihtiyaç duymadan hızlı kurulum",
-      "Yatık ve düşük verimli bitkilerde dahi kolay ve zengin hasat imkanı",
+      { name: "Düşük ürün kaybı", value: "yüksek verim" },
+      { name: "Kolay kullanım", value: "" },
+      { name: "Tüm biçerlere uyumludur", value: "" },
+      { name: "Hiçbir aparata ihtiyaç duymadan hızlı kurulum", value: "" },
+      {
+        name: "Yatık ve düşük verimli bitkilerde dahi kolay ve zengin hasat imkanı",
+        value: "",
+      },
     ],
   },
   {
@@ -177,13 +180,13 @@ const products: Product[] = [
     description: "Baler C, yüksek kapasiteli işler için tasarlanmıştır.",
     images: ["/assets/balya/5.png", "/assets/balya/6.png"],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000" },
+      { name: "Toplam genişlik", value: "2200" },
+      { name: "Ağırlık", value: "2100" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -192,13 +195,13 @@ const products: Product[] = [
     description: "Baler C, yüksek kapasiteli işler için tasarlanmıştır.",
     images: ["/assets/balya/5.png", "/assets/balya/6.png"],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000" },
+      { name: "Toplam genişlik", value: "2200" },
+      { name: "Ağırlık", value: "2100" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -208,13 +211,13 @@ const products: Product[] = [
       "Baler A, kompakt tasarımıyla küçük ölçekli çiftlikler için uygundur.",
     images: ["/assets/yedek/yedekparca.jpg", "/assets/yedek/another-image.jpg"],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000" },
+      { name: "Toplam genişlik", value: "2200" },
+      { name: "Ağırlık", value: "2100" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -223,13 +226,13 @@ const products: Product[] = [
     description: "Baler C, yüksek kapasiteli işler için tasarlanmıştır.",
     images: ["/assets/balya/5.png", "/assets/balya/6.png"],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000" },
+      { name: "Toplam genişlik", value: "2200" },
+      { name: "Ağırlık", value: "2100" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -238,13 +241,13 @@ const products: Product[] = [
     description: "Baler C, yüksek kapasiteli işler için tasarlanmıştır.",
     images: ["/assets/balya/5.png", "/assets/balya/6.png"],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000" },
+      { name: "Toplam genişlik", value: "2200" },
+      { name: "Ağırlık", value: "2100" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   {
@@ -258,13 +261,13 @@ const products: Product[] = [
       "/assets/balya/3.png",
     ],
     dimensions: [
-      "Toplam uzunluk (mm) : 5000",
-      "Toplam genişlik (mm) : 2200",
-      "Ağırlık (kg) : 2100",
-      "Traktör Gücü (hp): 50",
-      "Tipi: 3 İpli",
-      "Balya Ağırlığı (kg):25",
-      "Balya Boyu: 400-1800 arası",
+      { name: "Toplam uzunluk", value: "5000 mm" },
+      { name: "Toplam genişlik", value: "2200 mm" },
+      { name: "Ağırlık", value: "2100 kg" },
+      { name: "Traktör Gücü", value: "50 hp" },
+      { name: "Tipi", value: "3 İpli" },
+      { name: "Balya Ağırlığı", value: "25 kg" },
+      { name: "Balya Boyu", value: "400-1800 arası" },
     ],
   },
   // Diğer ürünler...
@@ -343,26 +346,51 @@ const ProductDetails: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-6 mt-8 bg-gray-100 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-6 mt-8 bg-gradient-to-r from-[#A8782E] via-[#D1A54C] to-[#D89A45] rounded-xl shadow-lg">
           {/* Ürün açıklaması */}
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-800 text-center">
+          <div className="flex flex-col items-center justify-center text-center">
+            <h2 className="text-2xl font-semibold text-gray-800">
               Ürün Hakkında
             </h2>
-            <p className="text-lg text-center text-gray-600 mt-6">
+            <p className="text-lg text-gray-800 mt-6 max-w-lg">
               {product.description}
             </p>
           </div>
+
           {/* Genel Ölçüler */}
+
           <div className="pl-0 sm:pl-48">
             <h2 className="text-2xl font-semibold text-gray-800 sm:text-left text-center sm:pl-8">
               Genel Ölçüler
             </h2>
-            <ul className="list-disc list-inside text-lg text-gray-700 mt-4 ">
-              {product.dimensions.map((dimension, index) => (
-                <li key={index}>{dimension}</li>
-              ))}
-            </ul>
+
+            {/* Tablo Başlıkları ve Veriler */}
+            <div className="overflow-x-auto mt-4">
+              <table className="min-w-full table-auto bg-transparent border-collapse">
+                <thead>
+                  <tr className="text-left border-b-2 border-gray-300">
+                    <th className="px-4 py-2 text-lg font-semibold text-gray-800">
+                      Ölçü
+                    </th>
+                    <th className="px-4 py-2 text-lg font-semibold text-gray-800">
+                      Değer
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {product.dimensions.map((dimension, index) => (
+                    <tr key={index} className="border-b border-gray-300">
+                      <td className="px-4 py-2 text-gray-800">
+                        {dimension.name}
+                      </td>
+                      <td className="px-4 py-2 text-gray-800">
+                        {dimension.value}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
