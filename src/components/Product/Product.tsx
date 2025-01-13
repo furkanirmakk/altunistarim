@@ -13,12 +13,13 @@ interface ProductProps {
 
 const Product: React.FC<ProductProps> = ({ products }) => {
   return (
-    <div className="flex justify-center items-center">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 p-0 pb-6 max-w-5xl">
+    <div className="flex justify-center items-center" >
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 p-0 pb-6 max-w-5xl" >
         {products.map((product) => (
           <div
             key={product.id}
             className="relative bg-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform group"
+            style={{ boxShadow: "0 10px 30px rgba(0, 0, 0, 0.3)" }}
           >
             <Link
               to={`/product/${product.id}`}

@@ -15,13 +15,11 @@ const resources = {
 
 // i18n yapılandırması
 i18n.use(initReactI18next).init({
-  resources: {
-    en: { translation: { key: "value" } },
-  },
-  lng: "en",
-  fallbackLng: "en",
+  resources, // Çeviri kaynaklarını burada kullanıyoruz
+  lng: "en", // Varsayılan dil
+  fallbackLng: "en", // Dil bulunamazsa geri dönüş dili
   interpolation: {
-    escapeValue: false,
+    escapeValue: false, // React zaten XSS koruması sağladığı için
   },
 });
 
