@@ -1,4 +1,6 @@
 import React from "react";
+import Mail from "./Mail";
+import Ara from "./Ara";
 
 const MailTel = () => {
   return (
@@ -13,18 +15,9 @@ const MailTel = () => {
             Herhangi bir sorunuz varsa, bizimle iletişime geçmekten çekinmeyin.
           </p>
           <div className="flex justify-center space-x-4">
-            <a
-              href="mailto:altunistarim@gmail.com"
-              className="bg-footer text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-all transform hover:scale-105 hover:translate-x-2 hover:translate-y-2 ease-in-out"
-            >
-              E-posta Gönder
-            </a>
-            <a
-              href="tel:+905322649196"
-              className="bg-footer text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-all transform hover:scale-105 hover:translate-x-2 hover:translate-y-2 ease-in-out"
-            >
-              Ara
-            </a>
+            <Mail />
+            <Ara />
+            
           </div>
         </div>
       </div>

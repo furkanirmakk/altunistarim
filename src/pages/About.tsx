@@ -14,7 +14,6 @@ const About: React.FC = () => {
       <div>
         <BackgroundVideo2 />
       </div>
-
       <MailTel />
       
     </div>

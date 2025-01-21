@@ -4,9 +4,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer/Footer";
-import ScrollToTopButton from "./components/ScrollToTopButton";
 import ProductDetails from "./components/Product/ProductDetails";
 import ScrollToTop from "./components/ScrollToTop";
+import BackToTopButton from "./components/BackToTopButton";
 
 
 const App: React.FC = () => {
@@ -19,7 +19,7 @@ const App: React.FC = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <ScrollToTopButton />
+      <BackToTopButton />
       <Footer />
     </Router>
   );
