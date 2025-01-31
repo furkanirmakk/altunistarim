@@ -347,6 +347,7 @@ const ProductDetails: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-6 mt-8 bg-gradient-to-r from-[#A8782E] via-[#D1A54C] to-[#D89A45] rounded-xl shadow-lg">
+          
           {/* Ürün açıklaması */}
           <div className="flex flex-col items-center justify-center text-center">
             <h2 className="text-2xl font-semibold text-gray-800">
