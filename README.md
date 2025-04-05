@@ -7,7 +7,7 @@ Bu proje sayesinde hem kullanıcı deneyimi hem de sektörel ihtiyaçları daha 
 
 💻 Kullandığım teknolojiler:
 
-React ile hızlı ve dinamik kullanıcı arayüzü
+React & TypeScript ile hızlı ve dinamik kullanıcı arayüzü
 
 Tailwind CSS ile temiz ve sade bir tasarım
 
@@ -20,8 +20,6 @@ Firmanın ürünlerini sergileyebileceği ürün vitrin sayfası
 Hakkımızda ve iletişim bölümleri
 
 Kolayca güncellenebilir ürün detay kartları
-
-Tarımsal ürünler hakkında bilgi veren dinamik içerikler
 
 Bu proje, hem yazılım becerilerimi geliştirmemde hem de farklı sektörlerin ihtiyaçlarını anlama konusunda bana çok şey kattı.
 
