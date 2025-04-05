@@ -27,14 +27,14 @@ Bu proje, hem yazılım becerilerimi geliştirmemde hem de farklı sektörlerin 
 
   </p>
   <p> 
-    <img src="git photos/1.jpg" alt="drawing" width="700">
-     <img src="git photos/2.jpg" alt="drawing" width="700">
-      <img src="git photos/3.jpg" alt="drawing" width="700">
-       <img src="git photos/4.jpg" alt="drawing" width="700">
-        <img src="git photos/5.jpg" alt="drawing" width="700">
-         <img src="git photos/6.jpg" alt="drawing" width="700">
-          <img src="git photos/12.jpg" alt="drawing" width="700">
-           <img src="git photos/13.jpg" alt="drawing" width="700">
+    <img src="git photos/1.png" alt="drawing" width="700">
+     <img src="git photos/2.png" alt="drawing" width="700">
+      <img src="git photos/3.png" alt="drawing" width="700">
+       <img src="git photos/4.png" alt="drawing" width="700">
+        <img src="git photos/5.png" alt="drawing" width="700">
+         <img src="git photos/6.png" alt="drawing" width="700">
+          <img src="git photos/12.png" alt="drawing" width="700">
+           <img src="git photos/13.png" alt="drawing" width="700">
             
     
   </p>
@@ -42,12 +42,12 @@ Bu proje, hem yazılım becerilerimi geliştirmemde hem de farklı sektörlerin 
     Resposive Tasarım 
   </p>
   <p>
-    <img src="git photos/7.jpg" alt="drawing" width="200">
-             <img src="git photos/8.jpg" alt="drawing" width="200">
-              <img src="git photos/9.jpg" alt="drawing" width="200">
-               <img src="git photos/10.jpg" alt="drawing" width="200">
-                <img src="git photos/11.jpg" alt="drawing" width="200">
-                 <img src="git photos/14.jpg" alt="drawing" width="200">
-                  <img src="git photos/15.jpg" alt="drawing" width="200">
+    <img src="git photos/7.png" alt="drawing" width="200">
+             <img src="git photos/8.png" alt="drawing" width="200">
+              <img src="git photos/9.png" alt="drawing" width="200">
+               <img src="git photos/10.png" alt="drawing" width="200">
+                <img src="git photos/11.png" alt="drawing" width="200">
+                 <img src="git photos/14.png" alt="drawing" width="200">
+                  <img src="git photos/15.png" alt="drawing" width="200">
   </p>
   
